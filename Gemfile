@@ -7,6 +7,8 @@ gem 'rails', '4.1.8'
 gem 'sqlite3'
 # Using devise as session manager
 gem 'devise'
+# Using simple_form for forms
+gem 'simple_form'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
