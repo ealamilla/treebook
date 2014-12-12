@@ -9,7 +9,8 @@ gem 'devise'
 gem 'simple_form'
 #We use sqlite3 only for development and test enviroments and not production
 group :production do
-  gem 'pg'
+  gem 'pg', '0.17.1'
+  gem 'rails_12factor', '0.0.2'
 end
 #We use sqlite3 only for development and test enviroments and not production
 group :development, :test do
