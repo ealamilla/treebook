@@ -3,12 +3,17 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 # Using devise as session manager
 gem 'devise'
 # Using simple_form for forms
 gem 'simple_form'
+
+#We use sqlite3 only for development and test enviroments and not production
+group :development, :test do
+    # Use sqlite3 as the database for Active Record
+    gem 'sqlite3'
+end
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
